@@ -3,7 +3,7 @@ name: Release Node.js app
 on: 
   push:
     branches:
-      -main
+      - main
 
 jobs:
   build-and-push:
