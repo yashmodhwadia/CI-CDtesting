@@ -1,0 +1,12 @@
+services:
+  website:
+    image: itsmauvee/ci-cdtesting
+    ports:
+      - 8080:8080
+
+  watchtower:
+    image: nickfedor/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock 
+
+    
